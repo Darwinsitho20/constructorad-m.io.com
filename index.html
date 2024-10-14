@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora D&M</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Menú de barra semitransparente */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Barra semitransparente */
+            padding: 10px 20px;
+            position: fixed; /* Fijo en la parte superior */
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            flex: 1;
+        }
+
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Espacio para evitar que el contenido quede oculto detrás del menú */
+        .content {
+            padding-top: 80px;
+        }
+
+        /* Sección Inicio */
+        .section-inicio {
+            height: 100vh;
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240611/pngtree-construction-company-plans-a-sketch-of-new-building-image_15747471.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .inicio-text p {
+            color: black; /* Color negro para el texto */
+            font-size: 24px;
+            font-weight: bold; /* Negrita */
+            margin-left: 50px;
+        }
+
+        /* Sección Sobre Nosotros */
+        .section-sobre-nosotros {
+            padding: 100px 50px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .section-sobre-nosotros p {
+            text-align: justify;
+            margin: 20px 0;
+        }
+
+        .firma-container {
+            margin-top: 20px;
+        }
+
+        .firma-container img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Sección Proyectos */
+        .section-proyectos {
+            padding: 100px 50px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .proyecto-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .proyecto {
+            width: 30%;
+        }
+
+        .proyecto img {
+            width: 100%;
+            height: auto;
+        }
+
+        .proyecto p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Sección Contacto */
+        .section-contacto {
+            height: 50vh;
+            background-image: url('https://aycconstructora.com.uy/wp-content/uploads/2021/07/fondo-portada-min.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-contacto h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .contacto-boton {
+            background-color: yellow;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contacto-boton:hover {
+            background-color: orange;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Ajustes para que el fondo del inicio esté debajo del menú de barra */
+        .section-inicio {
+            margin-top: -80px; /* Hace que el fondo suba hasta debajo del menú */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de barra semitransparente con logo y enlaces -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo-circle">
+                <img src="https://www.dymservicios.com/images/LOGOFINAL1.png" alt="Logo de la Constructora D&M">
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Sección Inicio -->
+        <section id="inicio" class="section-inicio">
+            <div class="inicio-text">
+                <p>Bienvenidos a Constructora D&M, construyendo el futuro.</p>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="sobre-nosotros" class="section-sobre-nosotros">
+            <h2>¿Quiénes Somos?</h2>
+            <p>
+                Somos Constructora D&M, una empresa con más de 20 años de experiencia
+                en el mercado. Nos dedicamos a crear proyectos de infraestructura innovadores,
+                sostenibles y de alta calidad, comprometidos con el cumplimiento de los más
+                altos estándares de la industria. Nuestro propósito es construir un futuro
+                mejor para las generaciones venideras, con proyectos que mejoren la vida
+                de las personas y el entorno.
+            </p>
+            <div class="firma-container">
+                <img src="https://i.pinimg.com/736x/3b/2d/50/3b2d503f75e290d69e6806b2a4ac3717.jpg" alt="Firma del fundador">
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="section-proyectos">
+            <h2>Nuestros Proyectos</h2>
+            <p>
+                La Constructora D&M te mostrara los proyectos mas destacados actualizados.
+            </p>
+            <div class="proyecto-container">
+                <div class="proyecto">
+                    <img src="https://lh4.googleusercontent.com/proxy/k6Tej39jb7SXqZpYLdDI28Yesnr8bkCfsgPeWAE_3EUUR0N9auvRZqXtDrlEGmFOqT_pIUJziS3m8sPDQhi9R5ytMSTpJ5bpkK33Xvhu7N1mevlXAaJV1pE" alt="Proyecto 1">
+                    <p>Puente Elevado</p>
+                </div>
+                <div class="proyecto">
+                    <img src="https://www.hgconstructora.com/wp-content/uploads/2022/03/img-smart-110-hg-constructora.jpg" alt="Proyecto 2">
+                    <p>Apartamentos Vista Al Mar</p>
+                </div>
+                <div class="proyecto">
+                    <img src="https://s3.amazonaws.com/static-prod-asset.fincaraiz.com.co/site/fincaraiz_service/media/listing/64e6f229-d621-44bc-b756-c5932d1ad790/photos/64e6f229-d621-44bc-b756-c5932d1ad790_1_True_83ffe3a2-2209-41ba-9be9-4c52e88858cb.jpg" alt="Proyecto 3">
+                    <p>Torre Empresarial Pacific</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section-contacto">
+            <h2>¿Te gusta nuestro trabajo?</h2>
+            <a href="Contactenos.html" class="contacto-boton">Contáctanos</a>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>2024 Todos los derechos reservados. Constructora D&M</p>
+    </footer>
+</body>
+</html>

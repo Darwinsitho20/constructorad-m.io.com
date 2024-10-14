@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - Constructora D&M</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf5e6; /* Fondo color vainilla */
+        }
+        
+        /* Parte izquierda del formulario */
+        .contact-form {
+            width: 100%; /* Asegurar que use todo el ancho */
+            max-width: 600px; /* Limitar ancho máximo para pantallas grandes */
+            padding: 20px;
+            float: left;
+            box-sizing: border-box; /* Para incluir padding en el ancho total */
+        }
+
+        .contact-form h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #ffdd57;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%; /* Botón ocupa todo el ancho */
+        }
+
+        .contact-form button:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Botón Volver */
+        .volver-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: yellow;
+            color: black;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .volver-btn:hover {
+            background-color: #ffc107;
+        }
+
+        /* Iconos de redes sociales */
+        .social-media {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-media a {
+            width: 70px; /* Aumentar tamaño del círculo */
+            height: 70px; /* Aumentar tamaño del círculo */
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        /* Iconos */
+        .social-media a img {
+            width: 35px; /* Aumentar tamaño del icono */
+            height: 35px; /* Aumentar tamaño del icono */
+        }
+
+        /* Pie de página */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .contact-form {
+                width: 100%; /* Usa todo el ancho en dispositivos móviles */
+                float: none; /* Quita el float en móviles */
+                padding: 10px; /* Menos padding en móviles */
+            }
+
+            .social-media {
+                bottom: 10px; /* Ajustar la posición en móviles */
+                right: 10px; /* Ajustar la posición en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botón Volver -->
+    <a href="index.html" class="volver-btn">Volver</a>
+
+    <!-- Formulario de contacto -->
+    <div class="contact-form">
+        <h2>Contáctenos</h2>
+        <form action="enviar_mensaje.php" method="POST">
+            <p>Teléfono: +57 123 456 789</p>
+            <p>Email: contacto@constructora.com</p>
+            <p>Dirección: Calle 123, Ciudad, País</p>
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensaje" placeholder="Escriba su mensaje aquí" rows="5" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+
+    <!-- Iconos de redes sociales -->
+    <div class="social-media">
+        <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/es/"><img src="https://img.icons8.com/fluent/48/000000/tiktok.png" alt="TikTok"></a>
+        <a href="https://web.whatsapp.com/"><img src="https://img.icons8.com/fluent/48/000000/whatsapp.png" alt="WhatsApp"></a>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        2024 Todos los derechos reservados - Constructora D&M
+    </footer>
+
+</body>
+</html>
